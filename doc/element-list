@@ -1,1 +1,7 @@
 org.raj.kotw
+org.raj.kotw.actor
+org.raj.kotw.core
+org.raj.kotw.move
+org.raj.kotw.special
+org.raj.kotw.stage
+org.raj.kotw.weapon

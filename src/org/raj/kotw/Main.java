@@ -1,15 +1,30 @@
 package org.raj.kotw;
 import java.util.*;
 
+import org.raj.kotw.core.ContinueGame;
+import org.raj.kotw.core.Narration;
+import org.raj.kotw.core.StageManager;
+import org.raj.kotw.stage.StageOne;
+import org.raj.kotw.stage.StageTwo;
+
 
 //TODO: Rework Monster class. DONE.
 //TODO: Write AI Manager
 //TODO: Finish three stages.
 
-public class Main {
 
+
+/**
+ * @author Rene Andre B. Jocsing
+ *
+ * The main class mainly serves as a vehicle to launch stages and contains a rudimentary game loop asking whether the player wants to repeat the game.
+ */
+
+public class Main {
+	
+	//main method
 	public static void main(String[] args) {
-		// Mostly used for talk events in the game and setting general system objects. 
+		
 		
 		ContinueGame contFlag = ContinueGame.getInstance();
 		Narration genericSysPrompt = new Narration();
@@ -18,19 +33,14 @@ public class Main {
 		
 		do { //Game loop
 			
-			StageOne stageOneInstance = new StageOne(); // Every time a stage is loaded, the following steps occur:
-			stageOneInstance.play();				// 1) A StageN object is instantiated. 2) the play method is called
-			stageOneInstance = null;					// and 3) the instance is made available for garbage collection once stage is finished. 
-			
-			StageTwo stageTwoInstance = new StageTwo();
-			stageTwoInstance.play();
-			stageTwoInstance = null;
+			StageManager.playStage(new StageOne()); //Play stages anonymously. 
+			StageManager.playStage(new StageTwo());
 			
 			genericSysPrompt.prompt("Do you wish to undergo the journey again? Yes or No?"); 
 			genericAnswerString = genericSysScan.nextLine();
 			contFlag.setFlag(genericAnswerString);
 			
-		}while(contFlag.getFlag() == true);
+		} while(contFlag.getFlag() == true);
 
 		genericSysScan.close();
 	}
