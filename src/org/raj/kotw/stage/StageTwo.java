@@ -1,14 +1,14 @@
 package org.raj.kotw.stage;
 
-import java.util.Scanner;
-
 import org.raj.kotw.actor.Player;
 import org.raj.kotw.core.Combat;
 import org.raj.kotw.core.FactoryMonster;
 import org.raj.kotw.core.Narration;
 import org.raj.kotw.core.Talk;
+import org.raj.kotw.weapon.DecoratorIron;
 import org.raj.kotw.weapon.DecoratorSilver;
 import org.raj.kotw.weapon.WeaponKnife;
+import org.raj.kotw.weapon.WeaponSword;
 
 
 /**
@@ -18,14 +18,13 @@ import org.raj.kotw.weapon.WeaponKnife;
  *
  */
 public class StageTwo extends Stage {
-	public String name = "Chapter 2";
-	public int id = 2;
+	private String name = "Chapter 2";
+	private int id = 2;
 	
 	@Override
 	public void play() {
 		@SuppressWarnings("resource")
 		//Note: We use the underlying stream all throughout the program so we cannot close any scanner manually. We should let Java close it on its own. 
-		Scanner pInput = new Scanner (System.in); //Initialize objects to be used in the stage. 
 		Player knight = Player.getInstance();
 		Narration narrator = new Narration (); 
 		Talk necroTalk = new Talk("Necromancer");
@@ -70,15 +69,14 @@ public class StageTwo extends Stage {
 		narrator.prompt("Now, you must return to Ventus, to your lord, and report your findings.");
 		
 		narrator.prompt("");
-		narrator.prompt("");
-		narrator.prompt("");
 		
 		narrator.prompt("Congratulations! You've reached the end of the demo!");
 		
 		knight.setHealth(knight.getMaxHP());	//Return player HP and SP back to default. End of demo reached. 
 		knight.addSP(-knight.getSP());
+		knight.setWep(new DecoratorIron (new WeaponSword()));
 		
-		pInput = null; //Derefeerence used objects. Help garbage collector.  
+		//Dereference used objects. Help garbage collector.  
 		knight = null;
 		narrator = null; 
 		necroTalk = null;

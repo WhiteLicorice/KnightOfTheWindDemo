@@ -19,8 +19,8 @@ import org.raj.kotw.core.Talk;
  */
 
 public class StageOne extends Stage {
-	public String name = "Chapter 1";
-	public int id = 1;
+	private String name = "Chapter 1";
+	private int id = 1;
 	
 	@Override
 	public void play() {
@@ -79,9 +79,9 @@ public class StageOne extends Stage {
 		Combat.fight(knight, FactoryMonster.generateMonster("ZOMBIE"));
 		
 		narrator.prompt("Much as you are loathe to admit, that was a difficult fight.");
-		narrator.prompt("These zombies are creatures of dark magic, capable of outlassting your blows and healing from their wounds.");
+		narrator.prompt("These zombies are creatures of dark magic, capable of outlasting your blows and healing from their wounds.");
 		narrator.prompt("You glance at your flask of red, taking a chug of the healing liquid.");
-		knight.setHealth(knight.getMaxHP() - 10);
+		knight.setHealth(knight.getMaxHP() - 10); //Set health to 40/50 for immersion purposes.
 		narrator.prompt("You will need it for the foes about to come next.");
 		
 		pInput = null; 			//Dereference objects at the end of the stage. Help garbage collector. 

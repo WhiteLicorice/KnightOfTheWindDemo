@@ -25,7 +25,6 @@ public class Main {
 	//main method
 	public static void main(String[] args) {
 		
-		
 		ContinueGame contFlag = ContinueGame.getInstance();
 		Narration genericSysPrompt = new Narration();
 		Scanner genericSysScan = new Scanner(System.in);

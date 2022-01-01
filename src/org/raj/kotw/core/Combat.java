@@ -20,7 +20,7 @@ import org.raj.kotw.move.MoveStrategy;
 public class Combat { //Combat class. 
 	
 	//Blank private constructor to reinforce the fact that Combat should be called in a static way. 
-	private Combat(){ 
+	private Combat() { 
 		
 	}
 	

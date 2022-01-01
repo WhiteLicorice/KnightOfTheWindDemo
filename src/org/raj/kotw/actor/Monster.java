@@ -7,13 +7,13 @@ package org.raj.kotw.actor;
  * Generic monster abstraction used as a guide. Set stats for each monster manually or with some random seed. 
  */
 public abstract class Monster extends Actor {
-	protected int health;
-	protected int attack;
-	protected int defense;
-	protected int speed;
-	protected int specialPoints;
-	protected int maxHP;
-	public String name;
+	private int health;
+	private int attack;
+	private int defense;
+	private int speed;
+	private int specialPoints;
+	private int maxHP;
+	private String name;
 	
 	//Generic getter and setter methods. 
 	

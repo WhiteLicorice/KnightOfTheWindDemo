@@ -12,14 +12,14 @@ import org.raj.kotw.weapon.Weapon;
  * @see Monster
  */
 public class Actor {
-	protected int health;
-	protected int attack;
-	protected int defense;
-	protected int speed;
-	protected Weapon weapon; //TODO: Make a Weapon class. Implement decorator deisng pattern. DONE.
-	protected int specialPoints;
-	protected int maxHP;
-	public String name;
+	private int health;
+	private int attack;
+	private int defense;
+	private int speed;
+	private Weapon weapon; //TODO: Make a Weapon class. Implement decorator deisng pattern. DONE.
+	private int specialPoints;
+	private int maxHP;
+	private String name;
 	
 	//Generic getter and setter methods. Self-explanatory. No need JavaDoc. 
 	
