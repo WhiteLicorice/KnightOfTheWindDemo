@@ -72,7 +72,7 @@ public class StageTwo extends Stage {
 		
 		narrator.prompt("Congratulations! You've reached the end of the demo!");
 		
-		knight.setHealth(knight.getMaxHP());	//Return player HP and SP back to default. End of demo reached. 
+		knight.setHealth(knight.getMaxHP());	//Return player HP, SP, and Weapon back to default. End of demo reached. 
 		knight.addSP(-knight.getSP());
 		knight.setWep(new DecoratorIron (new WeaponSword()));
 		
