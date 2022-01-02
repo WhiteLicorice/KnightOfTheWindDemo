@@ -120,6 +120,7 @@ public class Combat { //Combat class.
 	
 	private static void assess (Player player, Monster monster) { 
 		if (player.getHealth() == 0) {
+			@SuppressWarnings("resource")
 			Scanner exit = new Scanner(System.in);
 			System.out.println("Unfortunately, you have fallen, and without you, brave knight, the world will fall into chaos. GAME OVER!!!");
 			System.out.print("Press enter to exit . . . ");
