@@ -8,11 +8,6 @@ import org.raj.kotw.stage.StageOne;
 import org.raj.kotw.stage.StageTwo;
 
 
-//TODO: Rework Monster class. DONE.
-//TODO: Write AI Manager
-//TODO: Finish three stages.
-
-
 
 /**
  * @author Rene Andre B. Jocsing

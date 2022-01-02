@@ -63,7 +63,7 @@ public class StageOne extends Stage {
 		narrator.prompt("You sheathe your sword and jog away from the battlefield.");
 		narrator.prompt("Soon enough, you reach the beaten gates of Porkwall.");
 		narrator.prompt("A quick visit to the tavern, for information and a little bit of drink, provides you with clues.");
-		narrator.prompt("The clues to the graveyard, where numerous bodies have been unearthed.");
+		narrator.prompt("The clues lead to the graveyard, where numerous bodies have been unearthed.");
 		narrator.prompt("When you examine one of the graves, you find that it hasn't been dug out.");
 		narrator.prompt("'It's been clawed at from the inside,' you think. There are marks raked into the packed soil reminiscent of nails.");
 		narrator.prompt("'Human nails,' you think. And here you thought that the villagers were merely pulling a prank.");
