@@ -8,7 +8,7 @@ package org.raj.kotw.core;
 public class ContinueGame { //Singleton for ContinueGame Flag. 
 	
 	//Instance of the ContinueGame singleton.
-    private static ContinueGame continueGameflag = null; 
+    private static ContinueGame continueGameflag; 
    //The flag that stores the players decision.
     private boolean contFlag; 
     
