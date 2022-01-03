@@ -23,7 +23,6 @@ public class StageTwo extends Stage {
 	
 	@Override
 	public void play() {
-		@SuppressWarnings("resource")
 		//Note: We use the underlying stream all throughout the program so we cannot close any scanner manually. We should let Java close it on its own. 
 		Player knight = Player.getInstance();
 		Narration narrator = new Narration (); 
@@ -36,13 +35,13 @@ public class StageTwo extends Stage {
 		narrator.prompt("You make your way there, huddling behind a particularly stout tombstone.");
 		narrator.prompt("Hours pass and your legs are starting to cramp (no amount of knightly training can stave that off).");
 		narrator.prompt("When the bell strikes midnight, you briefly consider going back to the inn and finding a room to get some proper rest."); 
-		narrator.prompt("Fortunately—or unfortunately—you notice a robed man skulking into the graveyard.");
+		narrator.prompt("Fortunately - or unfortunately - you notice a robed man skulking into the graveyard.");
 		narrator.prompt("'What could an elderly man armed with a staff be doing here at such an hour?' you think.");
 		
 		narrator.prompt("You announce your presence with a holler, giving voice to your question. And perhaps also your suspicions.");
 		necroTalk.prompt("You! Ser Knight! Now that you have seen me, I cannot possibly let you live!");
 		narrator.prompt("'Typical,' you think.");
-		narrator.prompt("You draw your sword—");
+		narrator.prompt("You draw your sword-");
 		narrator.prompt("It flies from your hand, the necromancer swishing his staff.");
 		knight.setWep(null); //Disarm effect.
 		narrator.prompt("Having been effectively disarmed, you reach for the trusty knife hidden in your boot.");
@@ -51,10 +50,6 @@ public class StageTwo extends Stage {
 		narrator.prompt("'This flimsy knife's made of silver,' you think. 'I'll show him.'");
 		narrator.prompt("Considering how your weapon has change, you should try another strategy.");
 		knight.getWep().dispStats();
-		narrator.prompt("");
-		narrator.prompt("");
-		narrator.prompt("");
-		narrator.prompt("");
 		narrator.prompt("");
 		
 		Combat.fight(knight, FactoryMonster.generateMonster("WIZARD"));
