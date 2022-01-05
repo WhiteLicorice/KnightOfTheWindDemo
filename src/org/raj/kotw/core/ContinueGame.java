@@ -25,11 +25,12 @@ public class ContinueGame { //Singleton for ContinueGame Flag.
         return continueGameflag;
     }
     
-    public void setFlag(String continueFlag) {
+    public void setFlag(String continueFlag) throws RuntimeException {
  
     	switch(continueFlag.toLowerCase()) {
     	case("yes"): this.contFlag = true; break;
-    	case("no"): this.contFlag = false; break; 
+    	case("no"): this.contFlag = false; break;
+    	default: throw new RuntimeException ("Please answer correctly next time.");
     	}
     	
     }
