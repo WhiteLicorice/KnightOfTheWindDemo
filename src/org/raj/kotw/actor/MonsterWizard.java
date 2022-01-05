@@ -1,27 +1,27 @@
 package org.raj.kotw.actor;
 
 import org.raj.kotw.weapon.Weapon;
-import org.raj.kotw.weapon.WeaponRustedSword;
+import org.raj.kotw.weapon.WeaponWizardWand;
+
+
 
 /**
  * @author Rene Andre B. Jocsing
  * 
- * The MonsterBandit class contains data for the "Bandit" monster, one of the enemies encountered in-game. 
- * 
- * @see Monster
+ * The MonsterWizard class contains data for the "Wizard" monster, one of the enemies encountered in-game.
  *
  */
-public class MonsterBandit extends Monster {
-	private int maxHP = 25;
-	private int health = 20;
-	private int attack = 5;
-	private int defense = 7;
-	private int speed = 8;
-	private int specialPoints = 10;
-	private Weapon weapon = new WeaponRustedSword();
-	private String name = "Bandit";
+public class MonsterWizard extends Monster {
+	private int maxHP = 30;
+	private int health = 30;
+	private int attack = 10;
+	private int defense = 3;
+	private int speed = 10;
+	private int specialPoints = 30;
+	private Weapon weapon = new WeaponWizardWand();
+	private String name = "Wizard";
 	
-	//Getter and setter methods. Self-explanatory. Don't need JavaDoc.
+	//Getter and setter methods. Self-explanatory. Don't need JavaDoc. 
 	
 	public void getDesc() {
 		System.out.println("Name: " + this.name);
@@ -90,4 +90,3 @@ public class MonsterBandit extends Monster {
 	}
 	
 }
-

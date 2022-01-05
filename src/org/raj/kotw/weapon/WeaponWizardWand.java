@@ -1,18 +1,18 @@
 package org.raj.kotw.weapon;
 
 
+
 /**
  * @author Rene Andre B. Jocsing
  * 
- * Weapon for zombies. Used in-game as a vehicle for Zombie's lifesteal special attack. *
+ * Weapon for wizards. Used as a vehicle for Wizard's fireball special attack. 
+ *
  */
+public class WeaponWizardWand implements Weapon {
 
-public class WeaponZombieClaws implements Weapon {
-	
-	protected static final int DAMAGE = 10;
-	protected static final int COST = 10;
-	protected static final String TYPE = "ZomboClaws";
-	
+	protected static final int DAMAGE = 30;
+	protected static final int COST = 30;
+	protected static final String TYPE = "WizardWand";
 	@Override
 	public int getDamage() {
 		// TODO Auto-generated method stub
