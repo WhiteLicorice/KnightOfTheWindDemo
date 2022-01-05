@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.raj.kotw"},{"l":"org.raj.kotw.actor"},{"l":"org.raj.kotw.core"},{"l":"org.raj.kotw.move"},{"l":"org.raj.kotw.special"},{"l":"org.raj.kotw.stage"},{"l":"org.raj.kotw.weapon"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.raj.kotw.core"}];updateSearchResults();
