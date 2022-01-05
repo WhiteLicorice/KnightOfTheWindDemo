@@ -16,7 +16,7 @@ public class Actor {
 	private int attack;
 	private int defense;
 	private int speed;
-	private Weapon weapon; //TODO: Make a Weapon class. Implement decorator deisng pattern. DONE.
+	private Weapon weapon; //TODO: Make a Weapon class. Implement decorator design pattern. DONE.
 	private int specialPoints;
 	private int maxHP;
 	private String name;

@@ -9,7 +9,7 @@ import org.raj.kotw.special.SpecialWizardWand;
 import org.raj.kotw.special.SpecialZomboClaws;
 import org.raj.kotw.weapon.Weapon;
 
-//Special attacks for PLAYER based on weapon.
+//Special attacks for PLAYER and MONSTER based on weapon.
 
 
 /**
